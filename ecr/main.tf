@@ -2,13 +2,13 @@ provider "aws" {
   region = "us-west-2"
 }
 
-resource "aws_ecr_repository" "chowbus-repository" {
-  name                 = "chowbus-repo"
+resource "aws_ecr_repository" "test-repository" {
+  name                 = "test-repo"
   image_tag_mutability = "IMMUTABLE"
 }
 
-resource "aws_ecr_repository_policy" "chowbus-repo-policy" {
-  repository = aws_ecr_repository.chowbus-repository.name
+resource "aws_ecr_repository_policy" "test-repo-policy" {
+  repository = aws_ecr_repository.test-repository.name
   policy     = <<EOF
   {
     "Version": "2008-10-17",
