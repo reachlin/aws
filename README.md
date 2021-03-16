@@ -15,3 +15,11 @@ docker run -it aws bash
 # get kubectl config
 aws eks update-kubeconfig   --region us-west-2   --name lincai20210202
 ```
+
+# aws SSO usage
+Installed tfswitch and yawsso for terraform and aws SSO.
+
+```
+aws configure sso
+yawsso login
+```
