@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  awscli:
+    build:
+      context: .
+    container_name: awscli
+    image: awscli
+    hostname: awscli
+    command: sleep infinity
+    volumes:
+      - ~/dev:/root/dev
